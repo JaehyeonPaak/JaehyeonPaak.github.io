@@ -1,0 +1,10 @@
+---
+title: 'Start blog with Gatsby'
+date: 2024-02-08 00:00:00
+image: ../../images/javascript.png
+tags:
+- diary
+- gatsby
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occa

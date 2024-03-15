@@ -1,0 +1,192 @@
+body {
+  background-color: $light-gray;
+  color: $dark-gray;
+  text-shadow: 0px 0px 1px #7a7a7a;
+  font-family: $site-font;
+  // font-weight: 550;
+  // -webkit-text-stroke: 0.7px rgba(0, 0, 0, 0.616); 
+}
+body.dark {
+  background-color: $dark-gray;
+  color: $light-gray;
+  text-shadow: 0px 0px 10px black;
+}
+
+.main-container {
+  width: 641px;
+  margin: 60px auto;
+}
+
+// 스크롤바 디자인
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(41, 41, 41);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+  .main-container {
+    width: calc(100% - 6vw); 
+    margin: 60px auto; 
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .main-container {
+    margin: 20px auto 60px auto;
+  }
+}
+
+a {
+  &:hover {
+    color: #007bff;
+    text-decoration: none;
+  }
+}
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.common-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.common-button {
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 10px 60px 10px 30px;
+  transition: .3s;
+  border: 1px solid $light-green;
+  position: relative;
+}
+.common-button:hover {
+  background-color: #30834d91;
+  .arrow {
+    right: 25px;
+  }
+}
+.common-button span {
+  color: $light-gray;
+  font-size: 1.2rem;
+}
+
+.arrow {
+  position: absolute;
+  top: 24px;
+  right: 30px;
+  width: 8%;
+  height: 2px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  transition: right 0.5s ease; /* 변화가 일어날 속성과 시간, 그리고 이징 함수 설정 */
+}
+.arrow::after, .arrow::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  right: -2px;
+  background-color: #fff;
+}
+.arrow::after {
+  top: -3px;
+  transform: rotate(45deg);
+}
+.arrow::before {
+  top: 3px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  transform: rotate(-45deg);
+}
+
+.post-hashtag {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid $light-green;
+  border-radius: 5px; /* .post-hashtag의 기본 스타일 유지 */
+  padding: 1px 5px;
+  cursor: pointer;
+  transition: .3s;
+  white-space: nowrap;
+}
+.post-hashtag:hover {
+  background-color: #368d5441;
+  border-color: #55d883;
+}
+.post-hashtag.active {
+  background-color: #76ffa694;
+}
+.post-hashtag.active span:nth-of-type(1) {
+  font-weight: bold;
+}
+.post-hashtag span:nth-of-type(2) {
+  display: block;
+  width: 20px; /* 변경: 원의 지름 조정 */
+  height: 20px; /* 변경: 원의 지름 조정 */
+  background-color: rgba(0, 219, 0, 0.582);
+  color: #fff;
+  border-radius: 2px; /* 변경: 원 형태로 변경 */
+  text-align: center; /* 추가: 텍스트 가운데 정렬 */
+  line-height: 22px; /* 추가: 텍스트 수직 가운데 정렬 */
+  margin-left: 5px;
+}
+
+.card {
+  background-color: transparent;
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid rgb(160, 160, 160);
+  color: rgb(160, 160, 160);
+  display: flex;
+  flex-direction: row;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  &__label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 4px;
+    background-color: transparent;
+    white-space: nowrap;
+    transform: translate(0, 0);
+    transform-origin: 0 0;
+    transition: transform 100ms ease-in;
+    line-height: 1.2;
+  }
+  &__field {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    &:focus,
+    &:not(:placeholder-shown) {
+      & + .input__label {
+        transform: translate(.25rem, -65%) scale(0.9);
+        color: $light-green;
+        font-weight: bold;
+      }
+    }
+  }
+  input {
+    border: none;
+    background-color: transparent;
+    &:focus {
+      outline: none;
+    }
+  }
+}
