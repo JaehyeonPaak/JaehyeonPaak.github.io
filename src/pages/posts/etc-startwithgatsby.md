@@ -39,5 +39,5 @@ On the other hand, **Gatsby is used for static site generation without a server.
 Here is the list of the advantages of Gatsby.
 ##### 1. It's React based framework  
 ##### 2. It's freely customizable  
-##### 3. Support markdown  
+##### 3. Support markdown  tets
   
