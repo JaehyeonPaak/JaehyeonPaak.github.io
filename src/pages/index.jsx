@@ -71,4 +71,6 @@ const indexQuery = graphql`
   }
 `;
 
+export const Head = () => <Seo title="Home" />
+
 export default IndexPage
