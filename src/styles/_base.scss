@@ -124,10 +124,10 @@ ul {
 }
 .post-hashtag:hover {
   background-color: #368d5441;
-  border-color: #55d883;
+  border-color: #368d5441;
 }
 .post-hashtag.active {
-  background-color: #76ffa694;
+  background-color: #86dda45b;
 }
 .post-hashtag.active span:nth-of-type(1) {
   font-weight: bold;
@@ -136,7 +136,7 @@ ul {
   display: block;
   width: 20px; /* 변경: 원의 지름 조정 */
   height: 20px; /* 변경: 원의 지름 조정 */
-  background-color: rgba(0, 219, 0, 0.582);
+  background-color: rgba(87, 139, 87, 0.582);
   color: #fff;
   border-radius: 2px; /* 변경: 원 형태로 변경 */
   text-align: center; /* 추가: 텍스트 가운데 정렬 */
@@ -179,6 +179,7 @@ ul {
         transform: translate(.25rem, -65%) scale(0.9);
         color: $light-green;
         font-weight: bold;
+        background-color: #3F4245;
       }
     }
   }

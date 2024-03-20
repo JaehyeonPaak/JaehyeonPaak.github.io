@@ -1,6 +1,6 @@
 ---
 title: 'Scope'
-subtitle: 'Explains why I chose Gatsby for blogging and GitHub Pages for deploying.'
+subtitle: '자바스크립트의 핵심 개념인 스코프에 대해 설명합니다.'
 date: 2024-03-20 00:00:00
 logoImage: https://i.pinimg.com/564x/62/a1/b5/62a1b5828c143b96946b166d17e4488c.jpg
 backgroundImage: https://i.pinimg.com/564x/e0/b3/b8/e0b3b8025546d2bfde8a67532a11fa2d.jpg
