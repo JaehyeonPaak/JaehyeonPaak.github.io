@@ -15,19 +15,8 @@ const IndexPage = () => {
       <StaticQuery query={indexQuery} render={data => {
         return (
           <div>
-            {data.allMarkdownRemark.edges.map(({ node }, index) => {
-              console.log(node.fields);
-              return (
-                <Post
-                  key={node.id}
-                  title={node.frontmatter.title}
-                  subtitle={node.frontmatter.subtitle}
-                  slug={node.fields.slug}
-                  date={node.frontmatter.date}
-                  logoImage={node.frontmatter.logoImage}
-                  tags={node.frontmatter.tags}>
-                </Post>
-              )
+            {data.allMarkdownRemark.edges.map(({ node }) => {
+              return <Post key={node.id} node={node}/>;
             })}
           </div>
         );
