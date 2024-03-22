@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const imageUrl = {
   'main': 'https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  'posts': 'https://images.pexels.com/photos/1379627/pexels-photo-1379627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  'posts': 'https://images.pexels.com/photos/1249183/pexels-photo-1249183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   'about': 'https://images.pexels.com/photos/2923595/pexels-photo-2923595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 }
 

@@ -1,6 +1,6 @@
 ---
-title: 'var, let, const의 스코프'
-subtitle: '자바스크립트의 핵심 개념인 스코프와 키워드 var, let, const의 서로다른 스코프에 대해 설명합니다.'
+title: 'var 대신 let과 const 사용을 지향하자'
+subtitle: '자바스크립트의 핵심 개념 Scope와 var, let, const의 서로다른 스코프 및 var 사용을 지양해야하는 이유에 대해 설명합니다.'
 date: 2024-03-20 00:00:00
 logoImage: https://i.pinimg.com/564x/62/a1/b5/62a1b5828c143b96946b166d17e4488c.jpg
 backgroundImage: https://i.pinimg.com/564x/e0/b3/b8/e0b3b8025546d2bfde8a67532a11fa2d.jpg
@@ -8,7 +8,7 @@ tags:
 - javascript
 ---
 
-## Why I chose GitHub Pages
+## 스코프(Scope)
 Commonly known blogging platforms for developer include **Medium** and **WordPress**. These platforms make posting relatively easy but have limitations when it comes to customization.   
   
 Especially if you're an independent person and don't want to rely on third-party blogging platforms, I recommend **GitHub Pages**, where you can implement everything directly. 
