@@ -40,12 +40,16 @@ function Seo({ title, description, children }) {
       {/* 게시글 추가 정보 */}
       <meta name="twitter:label1" content="Category" />
       <meta name="twitter:data1" content="Development" />
+      {/* 게시글 추가 정보2 */}
+      <meta name="twitter:label2" content="Time to read" />
+      <meta name="twitter:data2" content="10 minutes" />
       {/* 발행 및 수정 시간 */}
       <meta property="article:published_time" content="2022-05-07T09:00:00.000Z" />
       <meta property="article:modified_time" content="2022-05-10T09:00:00.000Z" />
       {/* 썸네일 이미지 */}
       <meta name="twitter:image" content="https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
       <meta property="twitter:image" content="https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+      <meta property="og:image" content="https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
       {/* 썸네일 이미지 크기 */}
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:card" content="summary_large_image" />

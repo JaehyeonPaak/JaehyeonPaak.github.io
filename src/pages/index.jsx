@@ -9,7 +9,7 @@ import NameCard from "../components/namecard";
 
 const IndexPage = () => {
   return (
-    <Layout title='The dev blog by Jaehyeon' pageDescription='Explore Frontend Contents' pageType='main'>
+    <Layout pageDescription='Explore Frontend Contents' pageType='main'>
       <NameCard></NameCard>
       <h5 style={{ paddingLeft: '25px', margin: '30px 0', color: 'rgb(170, 170, 170)' }}>Recently published</h5>
       <StaticQuery query={indexQuery} render={data => {
