@@ -29,7 +29,7 @@ const SinglePost = ({ data }) => {
                 </div>
                 <div className='single-post__border'></div>
                 {/* body */}
-                <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}></div>
+                <div className='single-post' dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}></div>
             </div>
             {/* <Img className='card-image-top' fluid={post.image.childImageSharp.fluid}></Img> */}
         </Layout>

@@ -26,12 +26,12 @@
     margin: 20px 0;
 }
 
-h1, h2, h4 {
+.single-post h1, h2, h4 {
     font-weight: 700;
     margin-top: 40px;
 }
 
-p {
+.single-post p {
     font-size: 1.1rem;
     line-height: 1.8;
     letter-spacing: 0px; /* 글자 사이 간격 */
@@ -48,12 +48,12 @@ p {
     }
 }
 
-p + blockquote {
+.single-post p + blockquote {
     margin-top: -20px;
 }
 
 /* 인용절 */
-blockquote {
+.single-post blockquote {
     border-left: 3px solid rgb(121, 121, 121);
     border-radius: 4px;
     background-color: rgba(143, 143, 143, 0.212)!important;
@@ -63,7 +63,7 @@ blockquote {
     }
 }
 
-p img {
+.single-post p img {
     width: 100%;
     border-radius: 10px;
 }
